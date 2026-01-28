@@ -1,14 +1,18 @@
-import CustomTooltip from "@/components/custom/reuseable/CustomTooltip";
+import CustomButton from "@/components/custom/reuseable/CustomButton";
 
 const Home = () => {
   return (
     <div>
       <h1 className="text-center text-3xl font-semibold">Index page</h1>
       {/* Test div */}
-      <div className="p-5">
-        <CustomTooltip text="Custom Tooltip">
-          <span>Hover for details</span>
-        </CustomTooltip>
+      <div>
+        <CustomButton
+          isLink={true}
+          href="/home"
+          classes="bg-red-500 cursor-pointer hover:bg-blue-500"
+        >
+          Click on the button
+        </CustomButton>
       </div>
     </div>
   );
