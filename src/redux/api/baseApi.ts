@@ -1,3 +1,6 @@
+// ! Instruction (Remove this)
+// * In this file only need to change token (Bearer or without Bearer), url, provided tags and sometime need to remove refresh token logic
+
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import {
   BaseQueryApi,
@@ -43,7 +46,7 @@ const baseQueryWithToken: BaseQueryFn<
           method: "POST",
         },
         api,
-        extraOptions
+        extraOptions,
       );
 
       const refreshData = refreshResult?.data as {
